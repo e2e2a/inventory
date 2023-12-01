@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $port = 3306;
-$dbname = "db"; // Replace with your database name
+$dbname = "mydb"; // Replace with your database name
 $username = "root";     // Replace with your username
 $password = "";     // Replace with your password
 

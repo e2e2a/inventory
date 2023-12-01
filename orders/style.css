@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 80px;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #000f00;
+}
+span{
+    font-size: 36px;
+    color: rgb(109, 3, 3);
+}
+.header .list{
+    display: flex;
+    gap: 20px;
+}
+.header .list a{
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+.header .list a:hover{
+    color: #bbb7b7;
+    text-decoration: underline;
+}
+hr{
+    height: 2px;
+    background-color: #888888;
+}
+.top {
+    width: 100%;
+    color: #000;
+    background-color: antiquewhite;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order{
+    display: inline;
+    width: auto;
+    align-items: center;
+    text-align: center;
+
+}
+.order a{
+    display: block;
+    margin-top: 5px;
+    text-decoration: none; 
+    color: #000;
+}
+.order a:hover{
+    color: red;
+}
+.order h1{
+    margin-top: 25px;
+    letter-spacing: 1.5px;
+}
+.table{
+    margin-top: 20px;
+    padding: 0 100px;
+    width: 100%;
+}
+.table h2{
+    text-align: center;
+    letter-spacing: 2px;
+}
+table{
+    margin: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 95%;
+}
+th{
+    background-color: #eee;
+}
+table,th,td{
+    border: 1px solid #000;   
+}
+.search_input{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*ORDER PAGE*/
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.order-form{
+    width: 30%;
+    height: auto;
+    padding: 0 50px;
+    background-color: rgb(247, 217, 180);
+    border: 1px solid #000;
+    border-radius: 14px;
+}   
+.order-form input{
+    width: 100%;
+    padding: 8px 12px;
+    margin-top: 20px;
+    border: none;
+    background-color: #eee;
+}
+.order-form input:focus{
+    background-color: #fff;
+}
+.order-form h1{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin: 25px;
+}
+.order-form button{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffff;
+    border: 1px solid #eee;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+.order-form p{
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.order-form a{
+    text-decoration: none;
+}
+.order-form a:hover{
+    text-decoration: underline;
+}
+table{
+    text-align:center;
+}
