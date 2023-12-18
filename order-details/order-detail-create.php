@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
         echo '<script>alert("ORDER DETAILS FAILED!")</script>';
     }
 } else {
-    include_once '../templates/order-details/order_detail-create-template.php';
+    include_once '../templates/order-details/order-detail-create-template.php';
 }
 ?>
 

@@ -29,7 +29,7 @@ $result = $stmt->fetch(PDO::FETCH_ASSOC);
     $res_product_id = $result['product_id'];
     $res_quantity = $result['quantity'];
     $res_total_amount = $result['total_amount'];
-    include_once '../templates/order-details/order_detail-edit-template.php';
+    include_once '../templates/order-details/order-detail-edit-template.php';
 
 }
 ?>

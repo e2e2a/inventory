@@ -1,21 +1,21 @@
 <?php
 include '../php/config.php';
-$stmt = $con->prepare("SELECT * FROM suppliers");
+$stmt = $con->prepare("SELECT * FROM order_details");
 $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 if(isset($_POST['search'])){
-    $supplier_name = $_POST['supplier_name'];
-    $stmt = $con->prepare("SELECT * FROM suppliers where supplier_name Like :supplier_name");
-    $stmt->bindParam(':supplier_name', $supplier_name);
+    $order_id = $_POST['order_id'];
+    $stmt = $con->prepare("SELECT * FROM order_details where order_id Like :order_id");
+    $stmt->bindParam(':order_id', $order_id);
     $stmt->execute();
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 if(isset($_POST['delete'])){
     $id = $_POST['delete'];
-    $stmt = $con->prepare('DELETE FROM suppliers where id=:id');
+    $stmt = $con->prepare('DELETE FROM order_details where id=:id');
     $stmt->bindParam(':id', $id);
     if($stmt->execute()){
-        echo "<script>alert('SUPPLY DELETED!'); </script>";
+        echo "<script>alert('ORDER DETAILS DELETED!'); </script>";
         echo "<script>setTimeout(function(){
             window.location.href = 'home.php' ;
          }, 25); 
@@ -27,9 +27,8 @@ if(isset($_POST['delete'])){
 }
 if(isset($_POST['edit'])){
     $id = $_POST['edit'];
-    header('location: supplier-edit.php?suppliersId=' . $id);
-}
-else{
-    include_once '../templates/suppliers/supplier-home-template.php';
+    header('location: order_detail-edit.php?order_detailsId=' . $id);
+} else {
+    include_once '../templates/order-details/order-detail-index-template.php';
 }
 ?>

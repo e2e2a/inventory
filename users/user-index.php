@@ -5,7 +5,7 @@ if(!isset($_SESSION['valid'])){
     header("Location: user-login.php");
 }
 else{
-    include_once '../templates/users/user-home-template.php';
+    include_once '../templates/users/user-index-template.php';
 }
 ?>
 
